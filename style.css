@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    list-style: none;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 13vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.nav-menu {
+    width: 36vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 10vw;
+    position: relative;
+    left: 6.8vw;
+}
+
+.logo img {
+    width: 10vw;
+}
+
+ul {
+    font-size: 1.2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    left: 45vw; 
+}
+
+a {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    margin: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    cursor: pointer;
+    font-weight: 900;
+  }
+
+input[type="checkbox"]{
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+/*Main*/
+.container {
+    background-image: url(img/laranja\ azul\ recorte@2x.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.texto-container {
+    width: 90vw;
+    color: #FFFFFF;
+    position: relative;
+    top: 40vh;
+    left: 6.8vw;
+}
+
+.texto-container h1{
+    font-weight: 900;
+    font-size: 4.4vw;
+}
+
+.texto-container p {
+    font-size: 2vw;
+    text-transform: uppercase;
+    position: relative;
+    top: 8vh;
+}
+
+
+.container-2 {
+    width: 10vw;
+    height: 150vh;
+    margin: 4% 7% 4% 7%;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4, 2fr);
+    grid-gap: 1vw;
+}
+
+.container-2 img {
+    width: 20vw;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #f8f2f2;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-icons {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: 1%;
+}
+
+.footer-icons img {
+    width: 100%;
+}
+
+.facebook-icon {
+    width: 4%;
+    margin: 3%;
+}
+
+.copyright {
+    width: 55vw;
+    display: flex;
+    align-items: center;
+}
+
+.copyright p {
+    width: 190vw;
+    font-size: 1vw;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 1.2vw;
+    margin-right: 2vw;
+    position: relative;
+    left: 1vw;
+}
+
+button {
+    display: none;
+}
+
+/*Responsivo*/
+
+@media screen and (max-width: 600px) {
+  .logo {
+      position: relative;
+      left: 39vw;
+      top: .5vw;
+  }
+
+  .logo img {
+      width: 20vw;
+  }
+
+  header {
+      height: 5vh;
+  }
+  
+
+  .texto-container {
+      padding: 1vw;
+  }
+
+  .texto-container h1 {
+      width: 1vw;
+      font-size: 13vw;
+      position: relative;
+      top: 28vw;
+  }
+
+  .texto-container p {
+      font-size: 4vw;
+      position: relative;
+      top: 33vw;
+  }
+
+  .container {
+    background-image: url(img/laranja\ azul\ recorte@2x.png);
+    height: 100vh;
+    width: 100%;
+    background-position: top right 17%;
+    background-position: bottom left 83%;
+  }
+
+  .container-2 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+      margin: 10%;
+      margin-left: 13%;
+  }
+
+  .container-2 img {
+      width: 72vw;
+      margin: 20%;
+  }
+
+  .footer-icons {
+      background-color: #7FDBD4;
+      width: 93%;
+      position: relative;
+      bottom: 20vw;
+      left: 15vw;
+      display: flex;
+      align-items: center;
+  }
+
+  .facebook-icon {
+      width: 6vw;
+      margin-left: 5vw;
+  }
+
+  .footer-icons img {
+      margin: .5vw;
+      width: 55%;
+  }
+
+  .copyright {
+    width: 1%;
+    display: flex;
+    padding-bottom: 8%;
+    padding-left: 8%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    right: 66vw;
+    top: 7vw;
+ }
+  
+ .copyright p {
+    width: 45vw;
+    font-size: 2.8vw;
+ }
+  
+ h4 {
+    font-weight: 800;
+    font-size: 3.5vw;
+ }
+
+ footer {
+     width: 100%;
+      background-color:#FFFFFF;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    button {
+        background-color: #333333;
+        width: 25%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 13vw;
+        top: 4vw;
+    }
+
+    button a {
+        background-color: #333333;
+        color:#FFFFFF;
+    }    
+    
+}
+
+/*Menu hamburguer*/
+
+@media screen and (max-width: 600px) {
+
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(170px);
+}
+
+.container-menu {
+    width: 10%;
+    height: 10%;
+}
+
+.nav-menu{
+    background-color: #FFFFFF;
+    width:10%;
+    height: 100%;
+    position:absolute;
+    left:10px;
+    transition: all 0.5s;
+}
+
+.nav-menu ul{
+    display: block;
+    padding: 100%;
+    position: absolute;
+    top:2.5vh;
+    width: 100%;
+}
+
+ul {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+a{  
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    padding-left:20px;
+    color:black;
+    text-transform: capitalize;
+    background-color: #FFFFFF;
+}
+a:hover{
+    background-color: #7FDBD4;
+}
+label img{
+    width: 5vw;
+    height: 3vw;
+}
+label{
+    width: 29%;
+    height: 5vh;
+    background-color: black;
+    padding:0.1vw;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
